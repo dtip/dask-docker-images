@@ -6,7 +6,7 @@ RUN conda install --quiet --yes \
     cytoolz \
     dask==1.2.0 \
     nomkl \
-    numpy==1.16.2 \
+    numpy==1.16.3 \
     pandas==0.24.2 \
     tini==0.18.0 \
     && conda clean -tipsy \
