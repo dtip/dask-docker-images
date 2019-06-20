@@ -2,10 +2,10 @@ FROM continuumio/miniconda3:4.5.4
 
 RUN conda install --quiet --yes \
     -c conda-forge \
-    python-blosc \
-    cytoolz \
-    dask==1.2.0 \
-    nomkl \
+    python-blosc==1.8.1 \
+    cytoolz==0.9.0.1 \
+    dask==1.2.2 \
+    nomkl==3.0 \
     numpy==1.16.3 \
     pandas==0.24.2 \
     tini==0.18.0 \
