@@ -1,5 +1,7 @@
 FROM continuumio/miniconda3:4.5.4
 
+LABEL maintainer="Luigi Di Fraia"
+
 RUN conda install --quiet --yes \
     -c conda-forge \
     python-blosc==1.8.1 \
