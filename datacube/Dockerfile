@@ -1,5 +1,7 @@
 FROM luigidifraia/dask:v1.1.0-alpha
 
+LABEL maintainer="Luigi Di Fraia"
+
 RUN conda install --quiet --yes \
     -c conda-forge \
     boto3=1.9.179 \
