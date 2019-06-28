@@ -1,12 +1,14 @@
 FROM continuumio/miniconda3:4.5.4
 
+LABEL maintainer="Luigi Di Fraia"
+
 RUN conda install --quiet --yes \
     -c conda-forge \
     python-blosc==1.8.1 \
     cytoolz==0.9.0.1 \
-    dask==1.2.2 \
+    dask==2.0.0 \
     nomkl==3.0 \
-    numpy==1.16.3 \
+    numpy==1.16.4 \
     pandas==0.24.2 \
     tini==0.18.0 \
     && conda clean -tipsy \
