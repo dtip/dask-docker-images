@@ -3,4 +3,4 @@
 [![size and layers](https://images.microbadger.com/badges/image/luigidifraia/dask.svg)](https://microbadger.com/images/luigidifraia/dask "luigidifraia/dask size and layers")
 
 # Dask
-Docker image to provide access to distributed computing.
+Docker image to provide access to distributed computing. Based on the official [base image](https://github.com/dask/dask-docker/blob/master/base/Dockerfile).
