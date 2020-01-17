@@ -1,24 +1,22 @@
-FROM luigidifraia/dask:v1.1.0-alpha
+FROM luigidifraia/dask:v2.9.2-alpha
 
 LABEL maintainer="Luigi Di Fraia"
 
 RUN conda install --quiet --yes \
     -c conda-forge \
-    boto3=1.9.179 \
+    boto3=1.11.4 \
     datacube=1.7 \
     descartes=1.1.0 \
-    distributed=2.0.1 \
-    folium=0.9.1 \
-    geopandas=0.5.0 \
+    geopandas=0.6.2 \
     hdmedians=0.13 \
-    ipyleaflet=0.10.8 \
-    matplotlib=3.1.0 \
-    rasterstats=0.13.1 \
+    ipyleaflet=0.12.0 \
+    matplotlib=3.1.2 \
+    rasterstats=0.14.0 \
     ruamel=1.0 \
-    ruamel.yaml=0.15.96 \
-    scikit-image=0.15.0 \
-    scikit-learn=0.21.2 \
-    scipy=1.3.0 \
+    ruamel.yaml=0.16.5 \
+    scikit-image=0.16.2 \
+    scikit-learn=0.22.1 \
+    scipy=1.4.1 \
     seaborn=0.9.0 \
     shapely=1.6.4 \
     && conda clean -tipsy \

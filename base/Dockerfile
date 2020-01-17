@@ -5,11 +5,13 @@ LABEL maintainer="Luigi Di Fraia"
 RUN conda install --quiet --yes \
     -c conda-forge \
     python-blosc==1.8.1 \
-    cytoolz==0.9.0.1 \
-    dask==2.0.0 \
+    cytoolz==0.10.1 \
+    dask==2.9.2 \
+    lz4==3.0.2 \
     nomkl==3.0 \
-    numpy==1.16.4 \
-    pandas==0.24.2 \
+    numpy==1.17.3 \
+    pandas==0.25.2 \
+    python==3.6.7 \
     tini==0.18.0 \
     && conda clean -tipsy \
     && find /opt/conda/ -type f,l -name '*.a' -delete \
